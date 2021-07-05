@@ -1,4 +1,4 @@
-# footPrinter
+# ribofootPrinter
 Python code for analysis of ribosome profiling data that has been aligned to a simplified transcriptome.
 7/5/2021
 
