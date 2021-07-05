@@ -1,0 +1,27 @@
+# Input file for list.
+# Place input under each input param below:
+#
+#
+
+INPUT_shift
+12
+
+# SAM file of reads aligned by bowtie to the input fasta file.
+INPUT_picklenames
+/Users/guydoshnr/pRAID_copy/AK006F.pkl.gzip,/Users/guydoshnr/pRAID_copy/AK007F.pkl.gzip
+
+# Whether you want 5' or 3' end aligned reads. "all_5" or "all_3"
+INPUT_endmode
+all_5
+
+# This variable sets whether to count reads on genes (0) or just output the reads for every gene (1)
+INPUT_outputtype
+0
+
+# Setting this variable to 1 will output an extra file with CDS reads broken down by frame. 
+INPUT_doextra
+0
+
+# Name of the output file (doesn't need .csv extension)
+INPUT_outfile
+/Users/guydoshnr/dsa/dsdatagenlab/pklmeta/listgene/agnes/paperchecks/alldata4

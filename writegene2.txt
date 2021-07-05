@@ -1,0 +1,20 @@
+# Input file for writegene2.
+# Place input under each input param below:
+#
+#
+
+# The input gene names in NM... format. It can also tolerate aliases, like ACTB.
+INPUT_genenames
+NM_000291.4,ACTB
+
+# SAM file of reads aligned by bowtie to the input fasta file.
+INPUT_picklenames
+/Users/guydoshnr/pRAID_copy/dsdatalab/wigfiles/mammalian/pickles/refseqmane/AK006F.pkl.gzip,/Users/guydoshnr/pRAID_copy/dsdatalab/wigfiles/mammalian/pickles/refseqmane/AK010F.pkl.gzip
+
+# Whether you want 5' or 3' end aligned reads. "all_5" or "all_3"
+INPUT_endmode
+all_5
+
+# Name of the output file (doesn't need .csv extension)
+INPUT_outfile
+/Users/guydoshnr/dsa/dsdatagenlab/test

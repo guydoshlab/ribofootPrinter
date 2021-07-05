@@ -1,0 +1,38 @@
+# Input file for metagene.
+# Place input under each input param below:
+#
+#
+
+
+# kind is whether to do average around start codons (1) or stop codons (2)
+INPUT_kind
+1
+
+# this is whether to equally weight all genes (1) or to make an unweighted average based on rpm values (0)
+INPUT_equalweighting
+1
+
+# This is the minimal counts (rpkm) in the entire gene to be included in the analysis.
+INPUT_genethresh
+5
+
+#These next two are the 5' and 3' ranges around the position of interest.
+INPUT_range5
+100
+
+INPUT_range3
+300
+
+# SAM file of reads aligned by bowtie to the input fasta file.
+INPUT_picklenames
+/Users/guydoshnr/pRAID_copy/AK006F.pkl.gzip,/Users/guydoshnr/pRAID_copy/AK007F.pkl.gzip
+
+# Whether you want 5' or 3' end aligned reads. "all_5" or "all_3"
+INPUT_endmode
+all_5
+
+# Name of the output file (doesn't need .csv extension)
+INPUT_outfile
+/Users/guydoshnr/dsa/dsdatagenlab/pklmeta/metagene/vps4a/start
+
+

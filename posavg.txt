@@ -1,0 +1,49 @@
+# Input file for posavg.
+# Place input under each input param below:
+#
+#
+ 
+# Put in motif, ie H or AAA (nt or aa). This can be a comma-separated list, for example ATG,CTG
+# Put all to do all codons or amino acids. Note this will also generate peak (pause) scores, using a hardcoded window of +/-1 nt.
+# Put f or l at start of a motif (nt only) to get the first or last such motif in the region of interest (note ALL frames are checked).
+INPUT_motif
+ATG
+ 
+# kind is whether the motif is an amino acid (1) or nucleotide sequence (0)
+INPUT_kind
+0
+ 
+# frame is frame 0, 1, or 2 to be looking in. Put 3 for all 3 frames together.
+INPUT_frame
+1
+ 
+# Note that this is the minimal rpkm counts within the bkndwindow to be included in the average.
+INPUT_bkndwindowthresh
+0
+ 
+# This is the size of the half-window around the codon of interest to be included in the average.
+INPUT_bkndwindow
+30
+ 
+#ORFnorm will normalize to the ORF for UTRs. 0 does not normalize. A positive value will ORF normalize and specify the rpkm ORF threshold for genes to include. This uses a hard-coded shift of +/-13.
+INPUT_ORFnorm
+0
+ 
+#UTRmode is whether doing UTR5,CDS,or UTR3 = 0,1,2, respectively.
+INPUT_UTRmode
+1
+ 
+INPUT_shift
+12
+ 
+# SAM file of reads aligned by bowtie to the input fasta file. Can be a comma-separated list.
+INPUT_picklenames
+/Users/guydoshnr/pRAID_copy/AK006F.pkl.gzip,/Users/guydoshnr/pRAID_copy/AK007F.pkl.gzip
+ 
+# Whether you want 5' or 3' end aligned reads. "all_5" or "all_3"
+INPUT_endmode
+all_5
+ 
+# Name of the output file (doesn't need .csv extension)
+INPUT_outfile
+/Users/guydoshnr/dsa/dsdatagenlab/pklmeta/posavg/test_FRAME1

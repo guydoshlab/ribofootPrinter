@@ -1,0 +1,36 @@
+# Input file for small orfs quantitation.
+# Place input under each input param below:
+#
+#
+ 
+# This is the threshold of amino acids. Must be longer than this. Negative is only this.
+INPUT_lengththresh
+4
+ 
+# Put 1 to keep smallest ORF (last start codon). Put 0 for longest.
+INPUT_smallest
+0
+
+INPUT_shift
+12
+ 
+# This is how many mismatches to allow in start codon - 1 or 0.
+INPUT_mismatches
+0
+
+# This is whether to do 5'UTR or 3'UTR (5 or 3).
+INPUT_UTR
+3
+
+# SAM file of reads aligned by bowtie to the input fasta file.
+INPUT_picklenames
+/Users/guydoshnr/pRAID_copy/dsdatalab/AK006F.pkl.gzip,/Users/guydoshnr/pRAID_copy/dsdatalab/AK010F.pkl.gzip
+ 
+# Whether you want 5' or 3' end aligned reads. "all_5" or "all_3"
+INPUT_endmode
+all_5
+ 
+# Name of the output file (doesn't need .csv extension)
+INPUT_outfile
+/Users/guydoshnr/dsa/dsdatagenlab/pklmeta/dorfs/paper/dORF_0mm_thr4_longest_all
+

@@ -1,0 +1,43 @@
+# Input file for posstats.
+# Place input under each input param below:
+#
+#
+
+INPUT_motif
+H
+
+# kind is whether the motif is an amino acid (1) or nucleotide sequence (0)
+INPUT_kind
+1
+
+# frame is frame 0, 1, or 2 to be looking in.
+INPUT_frame
+0
+
+# This is the minimal counts (rpkm) in the entire gene to be included in the analysis.
+INPUT_genethresh
+0
+
+INPUT_pkwindow
+1
+
+#UTRmode is whether doing UTR5,CDS,or UTR3 = 0,1,2, respectively.
+INPUT_UTRmode
+1
+
+INPUT_shift
+16
+
+# SAM file of reads aligned by bowtie to the input fasta file.
+INPUT_picklenames
+/Users/guydoshnr/pRAID_copy/dsdatalab/wigfiles/mammalian/pickles/refseqmane/AK006F.pkl.gzip,/Users/guydoshnr/pRAID_copy/dsdatalab/wigfiles/mammalian/pickles/refseqmane/AK010F.pkl.gzip
+
+# Whether you want 5' or 3' end aligned reads. "all_5" or "all_3"
+INPUT_endmode
+all_5
+
+# Name of the output file (doesn't need .csv extension)
+INPUT_outfile
+/Users/guydoshnr/dsa/dsdatagenlab/pklmeta/posstats/H/aa_analysis
+
+
