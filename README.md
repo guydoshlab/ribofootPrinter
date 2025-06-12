@@ -37,4 +37,16 @@ smorflist.txt
 Experimental function that helps find small ORFs in UTR regions by reporting in-frame reads in the small ORF and main ORF. Relies on well-RNased ribosome footprint data and precise shift values.
 
 
+Added 6/12/25
+
+The nanopore_adaptation code is a version of mammalian_builddense that can be used with aligned nanopore data to ask what sequences exist in the transcriptome in locations near 5' ends. It also reports lengths of mapped reads (both absolute and normalized to the transcriptome).
+
+The fastq_functions code includes seqtools_m.py. It offers the capability to: 
+
+countreadsizes: 
+Report the sizes of a fastq file and, if desired, filter for reads with a particular motif on the 3' end.  
+
+endmotif_distribution: 
+Reads in a fastq file and counts the number of sequence motifs (of specified length) at either 5' or 3' end.
+
 
