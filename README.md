@@ -1,4 +1,8 @@
 # ribofootPrinter
+Note that if you are looking for ribofootPrinter2, it is in a different repository [here](https://github.com/guydoshlab/ribofootPrinter2) (updated 10/7/26).
+
+## Description
+
 Python code for analysis of ribosome profiling data that has been aligned to a simplified transcriptome.
 7/5/2021
 
